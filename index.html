@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>
+   Custom Profit Page
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #4a00e0;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header img {
+            height: 40px;
+        }
+        .header .search-bar {
+            display: flex;
+            align-items: center;
+        }
+        .header .search-bar input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .header .search-bar i {
+            margin-left: 10px;
+        }
+        .header .profile {
+            display: flex;
+            align-items: center;
+        }
+        .header .profile img {
+            height: 40px;
+            border-radius: 50%;
+            margin-left: 10px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .container .top-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .container .top-section input {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .container .top-section button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a00e0;
+            color: white;
+            cursor: pointer;
+        }
+        .container .cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .container .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 23%;
+            text-align: center;
+        }
+        .container .card h3 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container .card p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+        .container .card button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a00e0;
+            color: white;
+            cursor: pointer;
+        }
+        .container .tables {
+            display: flex;
+            justify-content: space-between;
+        }
+        .container .table-container {
+            width: 48%;
+        }
+        .container table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .container table, .container th, .container td {
+            border: 1px solid #ccc;
+        }
+        .container th, .container td {
+            padding: 10px;
+            text-align: center;
+        }
+        .container th {
+            background-color: #e0e0e0;
+        }
+        .container td input {
+            width: 80%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .container td button {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4a00e0;
+            color: white;
+            cursor: pointer;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="header">
+   <div class="logo">
+    <i class="fas fa-star">
+    </i>
+    <span>
+     Premium
+    </span>
+   </div>
+   <div class="search-bar">
+    <input placeholder="Search" type="text"/>
+    <i class="fas fa-search">
+    </i>
+   </div>
+   <div class="profile">
+    <i class="fas fa-bell">
+    </i>
+    <img alt="Profile Picture" height="40" src="https://storage.googleapis.com/a1aa/image/EbXyveOerMhLnEeHohmhulHN8imlipiEo6rIsaMViaYGIt4nA.jpg" width="40"/>
+   </div>
+  </div>
+  <div class="container">
+   <div class="top-section">
+    <input type="text" value="https://toprion.id"/>
+    <button>
+     Edit
+    </button>
+    <button>
+     Save Changes
+    </button>
+   </div>
+   <div class="cards">
+    <div class="card">
+     <h3>
+      Set Profit
+     </h3>
+     <p>
+      percentage: 0.0
+     </p>
+     <p>
+      fixed: 500
+     </p>
+     <p>
+      diskon: 0
+     </p>
+     <button>
+      Edit
+     </button>
+    </div>
+    <div class="card">
+     <h3>
+      Saldo:
+     </h3>
+     <p>
+      Rp 85.050
+     </p>
+     <button>
+      Withdraw History
+     </button>
+     <button>
+      Withdraw
+     </button>
+    </div>
+    <div class="card">
+     <h3>
+      Teams
+     </h3>
+     <p>
+      12
+     </p>
+     <p>
+      1 Completed
+     </p>
+    </div>
+    <div class="card">
+     <h3>
+      Productivity
+     </h3>
+     <p>
+      76%
+     </p>
+     <p>
+      5% Completed
+     </p>
+    </div>
+   </div>
+   <div class="tables">
+    <div class="table-container">
+     <h3>
+      Set Custom Profit
+     </h3>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         Product Name
+        </th>
+        <th>
+         Percentage
+        </th>
+        <th>
+         Fixed
+        </th>
+        <th>
+         Diskon
+        </th>
+        <th>
+         Actions
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         Three 10.000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Three 100.000
+        </td>
+        <td>
+         0
+        </td>
+        <td>
+         1000
+        </td>
+        <td>
+         500
+        </td>
+        <td>
+         <button>
+          Edit
+         </button>
+         <button>
+          Delete
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Three 15.000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Three 20.000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Three 25.000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Three 30.000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         Three 40.000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+    <div class="table-container">
+     <h3>
+      Set Custom Profit by product
+     </h3>
+     <table>
+      <thead>
+       <tr>
+        <th>
+         SKU
+        </th>
+        <th>
+         Product Name
+        </th>
+        <th>
+         Price
+        </th>
+        <th>
+         Percentage
+        </th>
+        <th>
+         Fixed
+        </th>
+        <th>
+         Diskon
+        </th>
+        <th>
+         Actions
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>
+         310
+        </td>
+        <td>
+         Three 10.000
+        </td>
+        <td>
+         10000
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         3100
+        </td>
+        <td>
+         Three 100.000
+        </td>
+        <td>
+         97325
+        </td>
+        <td>
+         0
+        </td>
+        <td>
+         1000
+        </td>
+        <td>
+         500
+        </td>
+        <td>
+         <button>
+          Edit
+         </button>
+         <button>
+          Delete
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         315
+        </td>
+        <td>
+         Three 15.000
+        </td>
+        <td>
+         15275
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         320
+        </td>
+        <td>
+         Three 20.000
+        </td>
+        <td>
+         20265
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         325
+        </td>
+        <td>
+         Three 25.000
+        </td>
+        <td>
+         25350
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         330
+        </td>
+        <td>
+         Three 30.000
+        </td>
+        <td>
+         29270
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         340
+        </td>
+        <td>
+         Three 40.000
+        </td>
+        <td>
+         39005
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         -
+        </td>
+        <td>
+         <button>
+          Add
+         </button>
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
