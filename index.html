@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daftar Kategori dan Brand</title>
+  <title>id</title>
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
   <style>
@@ -13,39 +13,7 @@
       background-color: #1a1a2e;
       color: #fff;
     }
-    .container-product {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    .card {
-      background-color: #333;
-      border-radius: 10px;
-      margin: 10px;
-      width: 100px;
-      overflow: hidden;
-      position: relative;
-      text-align: center;
-      cursor: pointer;
-    }
-    .card img {
-      width: 100%;
-      height: 100px; /* Ukuran gambar yang seragam */
-      object-fit: cover; /* Menjaga proporsi gambar */
-    }
-    .card .content {
-      padding: 10px;
-    }
-    .card .title {
-      font-size: 16px;
-      font-weight: bold;
-      margin: 5px 0;
-    }
-    
-    
-    
-        .container {
+    .container {
             width: 90%;
             margin: 0 auto;
         }
@@ -123,9 +91,7 @@
             font-size: 0.8em;
             color: #aaa;
         }
-    
-    
-    .tabs {
+        .tabs {
             display: flex;
             justify-content: center;
             margin: 20px 0;
@@ -142,6 +108,35 @@
     .tabs button.active {
             background-color: #007bff;
    }
+    .container-product {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background-color: #333;
+      border-radius: 10px;
+      margin: 10px;
+      width: 100px;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+      height: 100px; /* Ukuran gambar yang seragam */
+      object-fit: cover; /* Menjaga proporsi gambar */
+    }
+    .card .content {
+      padding: 10px;
+    }
+    .card .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 5px 0;
+    }
    .footer {
             background-color: #1e1e1e;
             padding: 20px 0;
@@ -149,6 +144,7 @@
         }
         .footer .social-icons {
             margin-bottom: 20px;
+            color: #F1FFFF;
         }
         .footer .social-icons i {
             font-size: 1.5em;
@@ -160,14 +156,17 @@
             flex-wrap: wrap;
             border-bottom: 0.1px solid #373746;
         }
+        .footer .links h3 {
+          color: #D0D3FF;
+        }
         .footer .links div {
-            margin: 10px 0;
+            margin: 2px 0;
         }
         .footer .links a {
-            color: #fff;
+            color: #E8FFFF;
             text-decoration: none;
             display: block;
-            margin: 5px 0;
+            margin: 20px 0;
         }
         .footer .copyright {
             margin-top: 20px;
@@ -176,14 +175,13 @@
         }
   </style>
 </head>
-<body>
-  <div class="container">
+<body id="body" style="display:none">
+  <div id="home">
+  <div class="container" id="container">
    <header class="header">
     <img alt="User avatar" height="50" src="kyyragoods.jpeg" width="50"/>
     <div class="icons">
      <i class="fas fa-search">
-     </i>
-     <i class="fas fa-flag">
      </i>
      <i class="fas fa-user">
      </i>
@@ -200,18 +198,7 @@
     </h2>
    </div>
    <div class="product-list">
-    <div class="product-item">
-     <img alt="Blood Strike game cover" height="50" src="https://storage.googleapis.com/a1aa/image/g6g0cdLe7PxhSqYOK1LA2Bn1GimKEjGR15XNeylZ4My8VK8TA.jpg" width="50"/>
-     <div class="product-info">
-      <h3>
-       Blood Strike
-      </h3>
-      <p>
-       Wizard Games Global Limited
-      </p>
-     </div>
-    </div>
-    <div class="product-item">
+    <div  class="product-item">
      <img alt="Mobile Legends game cover" height="50" src="https://storage.googleapis.com/a1aa/image/YyFYIleiC50XHKL95oKsGjz1jZYKQwXzViCRLWNaMQO9KFeTA.jpg" width="50"/>
      <div class="product-info">
       <h3>
@@ -273,8 +260,70 @@
   </div>
   <div id="brandList" class="container-product"></div>
   <div id="brandDetails" class="brand-details"></div>
-  
-  
+  </div>
+  <div id="privacy" style="display:none">
+    <div class="privacy-policy" style="font-family: Arial, sans-serif; line-height: 1.6; color: #E8FFFF; padding: 20px; max-width: 800px; margin: auto;">
+      <h1 style="text-align: center; color: #FFFFFF;">Kebijakan Privasi</h1>
+      <p>Di <strong>Toprion</strong>, yang dapat diakses melalui <a href="https://toprion.my.id" style="color: #4CAF50; text-decoration: none;">https://toprion.my.id</a>, kami menghargai privasi setiap pengunjung dan pelanggan kami. Kebijakan Privasi ini menjelaskan informasi apa saja yang kami kumpulkan, bagaimana kami menggunakannya, serta bagaimana kami melindungi data pribadi Anda.</p>
+      <p>Jika Anda memiliki pertanyaan tambahan atau memerlukan informasi lebih lanjut terkait Kebijakan Privasi ini, jangan ragu untuk menghubungi kami.</p>
+      <p>Kebijakan ini hanya berlaku untuk aktivitas yang dilakukan secara daring di situs web kami. Kebijakan ini tidak mencakup informasi yang dikumpulkan secara luring atau melalui platform selain toprion.my.id.</p>
+    
+      <h2 style="color: #FFFFFF;">Persetujuan</h2>
+      <p>Dengan mengakses atau menggunakan layanan kami, Anda dianggap telah menyetujui Kebijakan Privasi ini dan ketentuannya.</p>
+    
+      <h2 style="color: #FFFFFF;">Informasi yang Kami Kumpulkan</h2>
+      <p>Informasi yang kami kumpulkan meliputi data pribadi yang Anda berikan secara langsung, seperti:</p>
+      <ul>
+        <li><strong>Nomor Telepon</strong> – Digunakan untuk memproses dan memverifikasi transaksi.</li>
+        <li><strong>Alamat Email</strong> – Digunakan untuk mengirimkan informasi terkait pesanan atau transaksi Anda.</li>
+        <li><strong>ID Game</strong> – Digunakan untuk memastikan layanan digital yang Anda pesan sesuai dengan akun yang ditentukan.</li>
+      </ul>
+      <p>Jika Anda menghubungi kami secara langsung, kami mungkin meminta informasi tambahan seperti nama lengkap atau kontak lainnya untuk mempermudah komunikasi.</p>
+    
+      <h2 style="color: #FFFFFF;">Bagaimana Kami Menggunakan Informasi Anda</h2>
+      <p>Informasi yang Anda berikan digunakan secara eksklusif untuk:</p>
+      <ul>
+        <li>Menyelesaikan proses transaksi Anda dengan cepat dan aman.</li>
+        <li>Memberikan pembaruan terkait status pesanan.</li>
+        <li>Mengelola dan meningkatkan kinerja layanan kami.</li>
+        <li>Menangani keluhan atau pertanyaan terkait layanan.</li>
+      </ul>
+      <p>Kami menjamin bahwa data Anda tidak akan digunakan untuk tujuan lain selain yang disebutkan di atas.</p>
+    
+      <h2 style="color: #FFFFFF;">Keamanan Data Anda</h2>
+      <p>Kami memahami pentingnya menjaga keamanan data pribadi Anda. Oleh karena itu, data Anda hanya digunakan untuk keperluan transaksi dan akan dihapus otomatis dari sistem kami dalam waktu yang singkat setelah transaksi selesai.</p>
+    
+      <h2 style="color: #FFFFFF;">Berkas Log dan Teknologi Pelacakan</h2>
+      <p>Seperti banyak situs web lainnya, kami menggunakan berkas log untuk merekam data pengunjung. Data yang tercatat meliputi:</p>
+      <ul>
+        <li>Alamat IP Anda.</li>
+        <li>Tipe browser yang digunakan.</li>
+        <li>Waktu dan tanggal kunjungan.</li>
+        <li>Halaman yang Anda akses selama kunjungan.</li>
+      </ul>
+      <p>Informasi ini digunakan untuk menganalisis tren, mengelola situs, dan meningkatkan pengalaman pengguna. Data ini tidak terkait dengan informasi pribadi yang dapat mengidentifikasi Anda secara langsung.</p>
+    
+      <h2 style="color: #FFFFFF;">Cookies</h2>
+      <p>Kami menggunakan cookies untuk menyimpan preferensi pengguna dan menyesuaikan pengalaman Anda selama mengakses situs web kami. Cookies adalah file kecil yang disimpan di perangkat Anda oleh browser. Anda dapat menonaktifkan cookies melalui pengaturan browser Anda, namun hal ini dapat memengaruhi beberapa fitur di situs kami.</p>
+    
+      <h2 style="color: #FFFFFF;">Privasi Pihak Ketiga</h2>
+      <p>Kebijakan Privasi ini tidak mencakup layanan pihak ketiga yang mungkin terkait dengan toprion.my.id, seperti pengiklan atau mitra lainnya. Kami menganjurkan Anda untuk membaca kebijakan privasi dari pihak ketiga tersebut untuk mengetahui bagaimana mereka mengelola informasi Anda.</p>
+    
+      <h2 style="color: #FFFFFF;">Perubahan pada Kebijakan Privasi</h2>
+      <p>Kebijakan Privasi ini dapat diperbarui dari waktu ke waktu untuk mencerminkan perubahan pada layanan atau kebutuhan hukum. Setiap perubahan akan langsung dipublikasikan di halaman ini, dan Anda disarankan untuk memeriksa secara berkala.</p>
+    
+      <h2 style="color: #FFFFFF;">Hubungi Kami</h2>
+      <p>Jika Anda memiliki pertanyaan atau memerlukan bantuan lebih lanjut, jangan ragu untuk menghubungi kami melalui:</p>
+      <ul>
+        <li>Email: <a href="mailto:toprionid@gmail.com" style="color: #4CAF50;">toprionid@gmail.com</a></li>
+        <li>Nomor Telepon: 081554269688</li>
+        <li>Telegram: <a href="https://t.me/toprion" style="color: #4CAF50;">@toprion</a></li>
+        <li>Instagram: <a href="https://instagram.com/toprion" style="color: #4CAF50;">@toprion</a></li>
+      </ul>
+      <p style="text-align: center;">© 2024 toprion.my.id</p>
+    </div>
+</div>
+  </div>
     <footer class="footer">
     <div class="social-icons">
      <i class="fab fa-instagram">
@@ -318,14 +367,11 @@
        Facebook
       </a>
      </div>
-     
-    </div>
-    <div class="links">
-    <div>
+     <div>
       <h3>
        Informasi
       </h3>
-      <a href="#">
+      <a id="kebijakan-privasi" href="#kebijakan-privasi">
        Kebijakan Privasi
       </a>
       <a href="#">
@@ -333,8 +379,11 @@
       </a>
      </div>
     </div>
+    <div class="links">
+    
+    </div>
     <div class="copyright">
-     © 2024 KYYRAGOODS. All rights reserved.
+     © 2024 TOPRION. All rights reserved.
     </div>
    </footer>
   
@@ -346,6 +395,13 @@
     let refId = ''; // Variabel untuk menyimpan ref_id
 
     const BASE_URL = "https://server.goppob.my.id"; // URL Vercel untuk pengujian sementara, ganti dengan URL final
+    
+    document.getElementById('kebijakan-privasi').addEventListener('click', function(event) {
+    const targetElement = document.getElementById('privacy');
+    const home = document.getElementById('home');
+    home.style.display = "none";
+    targetElement.style.display = "block";
+  });
 
     async function fetchBrands() {
       try {
@@ -363,6 +419,8 @@
 
     function displayCategories(categories) {
       const categoryList = document.getElementById("categoryList");
+      const body = document.getElementById("body");
+      
       categoryList.innerHTML = "";
       categories.forEach(category => {
         const categoryButton = document.createElement("button");
@@ -374,6 +432,7 @@
         };
         categoryList.appendChild(categoryButton);
       });
+      body.style.display = "block";
       categoryList.style.display = "block";
     }
 
@@ -381,10 +440,12 @@
       const brandList = document.getElementById("brandList");
       const brandDetails = document.getElementById("brandDetails");
       const categoryList = document.getElementById("categoryList");
+      const container = document.getElementById("container");
 
       brandList.innerHTML = "";
       brandDetails.style.display = "none";
       categoryList.style.display = "block";
+      container.style.display = "block";
 
       const filteredBrands = brandData.filter(item => item.category === category);
       const displayedBrands = new Set();
@@ -418,9 +479,11 @@
       const brandDetails = document.getElementById("brandDetails");
       const categoryList = document.getElementById("categoryList");
       const brandList = document.getElementById("brandList");
+      const container = document.getElementById("container");
 
       categoryList.style.display = "none";
       brandList.style.display = "none";
+      container.style.display = "none";
 
       const products = brandData.filter(item => item.category === currentCategory && item.brand === brand);
 
@@ -508,7 +571,9 @@
     window.onload = () => {
       fetchBrands();
       window.addEventListener("hashchange", handleHashChange);
+      
     };
+    
   </script>
 </body>
 </html>
